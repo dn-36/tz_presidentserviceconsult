@@ -1,7 +1,7 @@
 package com.katarzyna.katarzyna
 
 import com.presidentserviceconsult.dimaz.black.cloaca.init_sdk.STATUS
-import com.presidentserviceconsult.dimaz.black.cloaca.logic_cloaca.Cloaca
+import com.presidentserviceconsult.dimaz.black.cloaca.logic_cloaca.LogicCloaca
 import org.junit.Assert
 import org.junit.Test
 
@@ -13,7 +13,7 @@ import org.junit.Test
 class ExampleUnitTest {
     @Test
     fun test_format_have_namign() {
-        val test =  Cloaca.logic(
+        val test =  LogicCloaca.logic(
             "https://domainname.com/1238sdfu8?sub1={wp1}&sub2={wp2}",
                     true,
             dataAttributionMap =  mapOf(
@@ -41,7 +41,7 @@ class ExampleUnitTest {
     @Test
     fun test_format_have_not_namign() {
 
-        val test =  Cloaca.logic(
+        val test =  LogicCloaca.logic(
             "https://domainname.com/1238sdfu8?sub1={wp1}&sub2={wp2}",
             true,
             dataAttributionMap =  mapOf("" to ""),
@@ -58,7 +58,7 @@ class ExampleUnitTest {
     @Test
     fun test_status_no_namign_state_false() {
 
-        val test =  Cloaca.logic(
+        val test =  LogicCloaca.logic(
             "https://domainname.com/1238sdfu8",
             false,
             dataAttributionMap =  mapOf(
@@ -79,7 +79,7 @@ class ExampleUnitTest {
     @Test
     fun test_status_have_namign_state_false() {
 
-        val test = Cloaca.logic(
+        val test = LogicCloaca.logic(
             "https://domainname.com/1238sdfu8",
             false,
             dataAttributionMap = mapOf(
@@ -94,22 +94,22 @@ class ExampleUnitTest {
         )
         Assert.assertEquals(
             test.status,
-            STATUS.ToOfer
+            STATUS.ToOffer
         )
     }
 
 @Test
 fun test_status_no_namign_state_true() {
 
-    val test =  Cloaca.logic(
+    val test =  LogicCloaca.logic(
         "https://domainname.com/1238sdfu8",
-        false,
+        true,
         dataAttributionMap =  mapOf("" to ""),
         goToWhite =  {},
         goToBlack =  {}
     )
     Assert.assertEquals(
-        test.status, STATUS.ToGame
+        test.status, STATUS.ToOffer
 
     )
 }
@@ -117,7 +117,7 @@ fun test_status_no_namign_state_true() {
 @Test
 fun test_status_have_namign_state_true() {
 
-    val test = Cloaca.logic(
+    val test = LogicCloaca.logic(
         "https://domainname.com/1238sdfu8",
         false,
         dataAttributionMap = mapOf(
@@ -132,6 +132,6 @@ fun test_status_have_namign_state_true() {
     )
     Assert.assertEquals(
         test.status,
-        STATUS.ToGame
+        STATUS.ToOffer
     )
 }}

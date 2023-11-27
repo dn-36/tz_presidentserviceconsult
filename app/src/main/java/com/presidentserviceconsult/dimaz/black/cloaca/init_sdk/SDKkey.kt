@@ -1,6 +1,6 @@
 package com.presidentserviceconsult.dimaz.black.cloaca.init_sdk
 object SDKkey {
-    val appsFlayerKey = "zHWGV5cZq5bZRNbF23Bc4R"
+    val appsFlayerKey = "APPS_FLAYER_KEY"
     val fireBaseUrlContent = "url"
     val FireBaseState = "state"
 

@@ -10,7 +10,7 @@ import com.facebook.FacebookSdk.fullyInitialize
 import com.facebook.FacebookSdk.setAutoInitEnabled
 import com.facebook.applinks.AppLinkData
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import com.presidentserviceconsult.dimaz.black.cloaca.logic_cloaca.Cloaca
+import com.presidentserviceconsult.dimaz.black.cloaca.logic_cloaca.LogicCloaca
 import com.presidentserviceconsult.dimaz.black.shared.SharedPrefs
 
 class InitSDK(val appContext: Context, val goToWhite:()->Unit, val goToBlack:(String)->Unit ) {
@@ -82,7 +82,7 @@ class InitSDK(val appContext: Context, val goToWhite:()->Unit, val goToBlack:(St
                             "link fireBase: ${fireBaseUrl}\n state fireBase: ${fireBaseState}"
                         )
 
-                        Cloaca.logic(
+                        LogicCloaca.logic(
                             fireBaseUrl,
                             fireBaseState,
                             namign,
@@ -146,5 +146,5 @@ class InitSDK(val appContext: Context, val goToWhite:()->Unit, val goToBlack:(St
 
 data class ForTest(val status: STATUS, val url: String = "")
 enum class STATUS {
-    ToGame, ToOfer
+    ToGame, ToOffer
 }

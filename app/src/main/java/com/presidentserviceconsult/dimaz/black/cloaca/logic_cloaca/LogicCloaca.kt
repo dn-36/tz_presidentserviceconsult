@@ -1,10 +1,9 @@
 package com.presidentserviceconsult.dimaz.black.cloaca.logic_cloaca
 
-import android.util.Log
 import com.presidentserviceconsult.dimaz.black.cloaca.init_sdk.ForTest
 import com.presidentserviceconsult.dimaz.black.cloaca.init_sdk.STATUS
 
-object Cloaca {
+object LogicCloaca {
     fun logic(
         base_url: String,
         state: Boolean,
@@ -47,7 +46,7 @@ object Cloaca {
          var finalUrl = "$base_url" + if(parseStrCompaign == "?") "" else parseStrCompaign
 
         goToBlack(finalUrl)
-        return ForTest(STATUS.ToOfer,finalUrl )
+        return ForTest(STATUS.ToOffer,finalUrl )
 
     }
 

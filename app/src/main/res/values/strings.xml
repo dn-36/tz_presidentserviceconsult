@@ -7,8 +7,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="facebook_client_token">0b45a59fde9de51bc19c01fe130ef589</string>
-    <string name="facebook_app_id">1399273453989822</string>
+    <string name="facebook_client_token">facebook_client_token</string>
+    <string name="facebook_app_id">facebook_app_id</string>
 
     <string name="lorem_ipsum">
        ssim.

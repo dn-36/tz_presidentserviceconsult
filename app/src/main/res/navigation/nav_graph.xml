@@ -26,7 +26,7 @@
         android:id="@+id/web_view_fragment"
         android:name="com.presidentserviceconsult.dimaz.black.fragment.BlackFragment"
         android:label="web_view_fragment"
-        tools:layout="@layout/white_fragment" >
+        tools:layout="@layout/black_fragment" >
         <action
             android:id="@+id/action_black_to_white"
             app:destination="@id/oneFragment" ></action>
