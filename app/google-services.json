@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "86575226441",
+    "project_id": "testfrog-ac63c",
+    "storage_bucket": "testfrog-ac63c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86575226441:android:9474b5ff93aef28d572998",
+        "android_client_info": {
+          "package_name": "com.clement.karaokefrog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydAk5U2Roe0hmjeAtgHbjo_MFh9FPotc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86575226441:android:07c99915f333ca0a572998",
+        "android_client_info": {
+          "package_name": "com.fioi.frock.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydAk5U2Roe0hmjeAtgHbjo_MFh9FPotc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86575226441:android:e72d82c016c75252572998",
+        "android_client_info": {
+          "package_name": "com.presidentserviceconsult.dima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydAk5U2Roe0hmjeAtgHbjo_MFh9FPotc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86575226441:android:91dbcf317a14766a572998",
+        "android_client_info": {
+          "package_name": "com.presidentserviceconsult.dimaz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydAk5U2Roe0hmjeAtgHbjo_MFh9FPotc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86575226441-0t8j2easlv7eoecoq7oje82snhn9unjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
