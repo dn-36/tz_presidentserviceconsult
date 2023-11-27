@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/business"
-        android:label="Бизнес помошник"
+        android:label="Тестовое задание"
         android:roundIcon="@drawable/business"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar"
