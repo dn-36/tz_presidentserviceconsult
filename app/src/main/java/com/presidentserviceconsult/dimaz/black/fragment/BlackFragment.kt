@@ -50,10 +50,8 @@ class BlackFragment : Fragment() {
         binding.vebview.setWebChromeClient(client)
         binding.vebview.setDownloadListener { url, userAgent, contentDisposition, mimeType, contentLength ->
             if (webviewSettings.checkStoragePermission()) {
-                // If permission is granted, download the file
                 webviewSettings.downloadFile(url, contentDisposition, mimeType)
             } else {
-                // Request storage permission
                 webviewSettings.requestStoragePermission()
             }
         }

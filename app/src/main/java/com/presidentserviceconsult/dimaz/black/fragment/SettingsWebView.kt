@@ -3,6 +3,7 @@ package com.presidentserviceconsult.dimaz.black.fragment
 import android.Manifest
 import android.app.Activity
 import android.app.DownloadManager
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -19,6 +20,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.getSystemService
 import com.presidentserviceconsult.dimaz.black.shared.SharedPrefs
 
 class SettingsWebView(val context:Activity,val goWhite:()->Unit) {
@@ -87,20 +89,16 @@ class SettingsWebView(val context:Activity,val goWhite:()->Unit) {
      fun downloadFile(url: String, contentDisposition: String?, mimeType: String?) {
          val request = DownloadManager.Request(Uri.parse(url))
 
-         // Set the MIME type
          request.setMimeType(mimeType)
 
-         // Set the content disposition, if available
          contentDisposition?.let { disposition ->
              request.addRequestHeader("Content-Disposition", disposition)
          }
 
-         // Set destination storage directory and file name
          val fileName = URLUtil.guessFileName(url, contentDisposition, mimeType)
          val downloadDirectory =
              Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
 
-         // Ensure the directory exists
          if (!downloadDirectory.exists()) {
              downloadDirectory.mkdirs()
          }
@@ -111,6 +109,9 @@ class SettingsWebView(val context:Activity,val goWhite:()->Unit) {
          )
 
          request.setDestinationUri(destinationUri)
+         val downloadManager = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+
+         downloadManager.enqueue(request)
 
      }
 
